@@ -20,11 +20,11 @@ Feature:
 
 It includes zsh and bash, two of the most important terminals in Linux. 
 
-# zsh
+### zsh
 
 .zshrc: include my zsh configuration. Need to install oh-my-zsh first. I also modified the terminal in a fancy style.
 
-# bash
+### bash
 .bashrc: include some important environment variables, like anaconda, gmt, or some geophysical software(Seismic Unix) configuration. Also modified the terminal to a fancy style.
 
 ## Source template 
