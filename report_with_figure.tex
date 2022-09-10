@@ -1,0 +1,93 @@
+\documentclass{ctexart}
+\usepackage{indentfirst}
+\usepackage{lmodern}% http://ctan.org/pkg/lm
+\usepackage{setspace}
+\usepackage{verbatim}
+\usepackage{amsmath}%数学
+\usepackage{amsthm}%数学定理、证明
+\usepackage{graphicx}%graphicx基于graphics,更方便
+% \usepackage{subfig}%图像
+\usepackage{subfigure}
+\usepackage{booktabs}%表格
+\usepackage{tabularx}%表格
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{relsize}
+\usepackage[usenames]{color}   
+%\usepackage{colortbl}%表格颜色
+\usepackage[table]{xcolor}
+\usepackage{array}
+\usepackage[rightcaption]{sidecap}
+\usepackage{hyperref}
+\usepackage{float}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=black
+}
+\lstset{
+         language = vhdl, numbers=left, 
+         numberstyle=\tiny,keywordstyle=\color{blue!70},
+         commentstyle=\color{red!50!green!50!blue!50},frame=shadowbox,
+         rulesepcolor=\color{red!20!green!20!blue!20},basicstyle=\ttfamily
+}
+\renewcommand{\arraystretch}{1.8}%The height of each row, relative to its default height
+\renewcommand{\figurename}{Fig.} %重定义编号前缀词
+\renewcommand{\thesubfigure}{(\roman{subfigure})}%此外，还可设置图编号显示格式，加括号或者不加括号
+\makeatletter \renewcommand{\@thesubfigure}{\thesubfigure \space}%子图编号与名称的间隔设置
+\renewcommand{\p@subfigure}{} \makeatother
+
+\setlength{\parindent}{2em}
+\addtolength{\parskip}{3pt}
+
+\onehalfspacing %1.5倍行距
+
+\graphicspath{{./figures/}} 
+\title{Hello World}
+\begin{document}
+\begin{titlepage}
+        \vspace*{-2.5cm}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\linewidth]{zjdx}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\linewidth]{QSY}
+	\end{figure}
+	\vspace{-0.5cm}
+	\begin{center}
+		\Huge{\textbf{2022\ CSM暑期实习}}\\
+		
+		\Huge{\textbf{实习报告}}
+	\end{center}
+	
+	
+	\vspace*{1.5cm}
+
+    \begin{center}
+    \Large
+            实验地点\ \ \underline{\makebox[220pt]{东四406}}\\
+            \vspace{0.3cm}
+            \quad\ 姓\; 名 \ \ \underline{\makebox[220pt]{金沈尧}}\\
+            \vspace{0.3cm}
+            \quad\ 学\; 号\ \ \underline{\makebox[220pt]{310100529}}\\
+            \vspace{0.3cm}
+            实验日期\ \ \underline{\makebox[220pt]{2021年 9 月 18 日}}\\
+            \vspace{0.3cm}
+            指导老师\ \ \underline{\makebox[220pt]{金沈尧}}\\
+            \vspace{0.3cm}
+            \quad\ 成\; 绩\ \ \underline{\makebox[220pt]{114514}}\\
+
+              
+            
+
+             
+    \end{center}
+        
+    
+\end{titlepage}
+\end{document}
