@@ -15,14 +15,25 @@ Feature:
 - better sheet supporting
 - better figure supporting
 
-### "report_with_figure"
+### "report_with_figure_win"
 
-This version is rebuild by shenyao on arch Linux. There's no more annoying "\n" problems on it.(The "\n" is different in Linux and windows, and the same as OS X)
+This version is build by shenyao previously on Windows 11. 
 
 Feature: 
 
 - Compatible with CteX (Linux version)
 - Simple, and easy to modify
+- Used for win. Compile on linux will cause error for different "\n"
+
+### "report_with_figure_linux"
+
+This version is rebuild by shenyao on Arch.
+
+Feature: 
+
+- Compatible with CteX (Linux version)
+- Simple, and easy to modify
+- Used for Linux. Compile on win will cause error for different "\n"
 
 ## terminal template
 

@@ -1,0 +1,125 @@
+%!TEX program = xelatex
+\documentclass{ctexart}
+\usepackage{indentfirst}
+\usepackage{lmodern}% http://ctan.org/pkg/lm
+\usepackage{setspace}
+\usepackage{verbatim}
+\usepackage{amsmath}%数学
+\usepackage{amsthm}%数学定理、证明
+\usepackage{graphicx}%graphicx基于graphics,更方便
+% \usepackage{subfig}%图像
+\usepackage{subfigure}
+\usepackage{booktabs}%表格
+\usepackage{tabularx}%表格
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{relsize}
+\usepackage[usenames]{color}   
+%\usepackage{colortbl}%表格颜色
+\usepackage[table]{xcolor}
+\usepackage{array}
+\usepackage[rightcaption]{sidecap}
+\usepackage{hyperref}
+\usepackage{float}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=black
+}
+\lstset{
+    basicstyle          =   \sffamily,          % 基本代码风格
+    keywordstyle        =   \bfseries,          % 关键字风格
+    commentstyle        =   \rmfamily\itshape,  % 注释的风格，斜体
+    stringstyle         =   \ttfamily,  % 字符串风格
+    flexiblecolumns,                % 别问为什么，加上这个
+    numbers             =   left,   % 行号的位置在左边
+    showspaces          =   false,  % 是否显示空格，显示了有点乱，所以不现实了
+    numberstyle         =   \zihao{-5}\ttfamily,    % 行号的样式，小五号，tt等宽字体
+    showstringspaces    =   false,
+    captionpos          =   t,      % 这段代码的名字所呈现的位置，t指的是top上面
+    frame               =   lrtb,   % 显示边框
+}
+
+\lstdefinestyle{Python}{
+    language        =   Python, 
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{blue},
+    keywordstyle    =   [2] \color{teal},
+    stringstyle     =   \color{magenta},
+    commentstyle    =   \color{red}\ttfamily,
+    breaklines      =   true,   
+    columns         =   fixed,  
+    basewidth       =   0.5em,
+}
+\renewcommand{\arraystretch}{1.8}%The height of each row, relative to its default height
+\renewcommand{\figurename}{Fig.} %重定义编号前缀词
+\renewcommand{\thesubfigure}{(\roman{subfigure})}%此外，还可设置图编号显示格式，加括号或者不加括号
+\makeatletter \renewcommand{\@thesubfigure}{\thesubfigure \space}%子图编号与名称的间隔设置
+\renewcommand{\p@subfigure}{} \makeatother
+
+\setlength{\parindent}{2em}
+\addtolength{\parskip}{3pt}
+
+\onehalfspacing %1.5倍行距
+
+\graphicspath{{./figures/}} 
+\title{Hello World}
+\begin{document}
+\begin{titlepage}
+        \vspace*{-2.5cm}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\linewidth]{zjdx}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\linewidth]{QSY}
+	\end{figure}
+	\vspace{-0.5cm}
+	\begin{center}
+		\Huge{\textbf{2022\ 暑期实习}}\\
+		
+		\Huge{\textbf{实习报告}}
+	\end{center}
+	
+	
+	\vspace*{1.5cm}
+
+    \begin{center}
+    \Large
+            实验地点\ \ \underline{\makebox[220pt]{RCP Lab, CSM, United States}}\\
+            \vspace{0.3cm}
+            \quad\ 姓\; 名 \ \ \underline{\makebox[220pt]{Shenyao Jin}}\\
+            \vspace{0.3cm}
+            \quad\ 学\; 号\ \ \underline{\makebox[220pt]{}}\\
+            \vspace{0.3cm}
+            指导老师\ \ \underline{\makebox[220pt]{}}\\
+            \vspace{0.3cm}
+            \quad\ 成\; 绩\ \ \underline{\makebox[220pt]{}}\\
+         
+    \end{center}
+        
+    
+\end{titlepage}
+
+\newpage
+% \setcounter{tocdepth}{5}
+\tableofcontents
+\thispagestyle{empty}%Removes the page numbering.
+% \listoffigures%生成插图
+% \listoftables%生成表格
+\thispagestyle{empty}%Removes the page numbering.
+
+\newpage
+\pagenumbering{arabic}%重新开始标号,阿拉伯数字形式
+
+\begin{thebibliography}{99} 
+        \bibitem{ref1}Jin, G., Gaherty, J.B., Abers, G.A., Kim, Y., Eilon, Z. and Buck, W.R., 2015. Crust and upper mantle structure associated with extension in the W oodlark R ift, P apua N ew G uinea from R ayleigh‐wave tomography. Geochemistry, Geophysics, Geosystems, 16(11), pp.3808-3824.
+        \bibitem{ref2}Feo, G., Sharma, J., Kortukov, D., Williams, W. and Ogunsanwo, T., 2020. Distributed fiber optic sensing for real-time monitoring of gas in riser during offshore drilling. Sensors, 20(1), p.267.
+        \bibitem{ref3}Trnkoczy, A., 2009. Understanding and parameter setting of STA/LTA trigger algorithm. In New Manual of Seismological Observatory Practice (NMSOP) (pp. 1-20). Deutsches GeoForschungsZentrum GFZ.
+\end{thebibliography}
+\end{document}
