@@ -1,6 +1,6 @@
-# template-syjin
+# small-template-syjin
 
-This template repo is mainly for the recovery of my system. I might ruin my system by accident time by time. And if this template is useful you could use it for free. 
+This template repo is mainly for the recovery of **my system**. I might ruin my system by accident time by time. And if this template is useful you could use it for free. 
 
 ## latex template
 
